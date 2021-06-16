@@ -1,0 +1,23 @@
+{
+  "name": "stateful-counter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@algo-builder/algob": "^1.0.2",
+    "algosdk": "^1.9.1",
+    "chai": "^4.3.4",
+    "mocha": "^9.0.0"
+  },
+  "scripts": {
+    "algob": "algob",
+    "lint": "eslint --ext .js,.ts scripts",
+    "lint:fix": "eslint --fix --ext .js,.ts scripts",
+    "test": "mocha",
+    "build:docs": "echo ok",
+    "build": "echo ok"
+  },
+  "mocha": {
+    "file": "../../test/setup.js"
+  }
+}

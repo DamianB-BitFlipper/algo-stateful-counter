@@ -1,0 +1,13 @@
+default:
+    timestamp: 1623777530478
+    metadata: {}
+    asa: {}
+    ssc:
+        approval_program.py-clear_program.teal:
+            1623777530:
+                creator: EDXG4GGBEHFLNX6A7FGT3F6Z3TQGIU6WVVJNOXGYLVNTLWDOCEJJ35LWJY
+                txId: LPW7UYJUE5WDXM6FZUARIZIIBIUYVYHMHZOEBX4VLWEM2X5IQEFA
+                confirmedRound: 132743
+                appID: 41
+                timestamp: 1623777530
+    dLsig: {}

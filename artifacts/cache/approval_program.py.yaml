@@ -1,0 +1,87 @@
+filename: approval_program.py
+timestamp: 1623777522
+compiled: AiADAAEDJgEHY291bnRlcjEYIhJAABYxGSISQAAHI0AAAQAjQygoZCQIZyNDKCJnI0M=
+compiledHash: OC5EXTBBOVZPPBFGXGZXRGCCVIDZFDJT73NHLO2C2MFLNIOBQGTTQP5VB4
+srcHash: 1007412811
+tealCode: |
+    #pragma version 2
+    txn ApplicationID
+    int 0
+    ==
+    bnz l6
+    txn OnCompletion
+    int NoOp
+    ==
+    bnz l5
+    int 1
+    bnz l4
+    err
+    l4:
+    int 1
+    return
+    l5:
+    byte "counter"
+    byte "counter"
+    app_global_get
+    int 3
+    +
+    app_global_put
+    int 1
+    return
+    l6:
+    byte "counter"
+    int 0
+    app_global_put
+    int 1
+    return
+base64ToBytes:
+    - 2
+    - 32
+    - 3
+    - 0
+    - 1
+    - 3
+    - 38
+    - 1
+    - 7
+    - 99
+    - 111
+    - 117
+    - 110
+    - 116
+    - 101
+    - 114
+    - 49
+    - 24
+    - 34
+    - 18
+    - 64
+    - 0
+    - 22
+    - 49
+    - 25
+    - 34
+    - 18
+    - 64
+    - 0
+    - 7
+    - 35
+    - 64
+    - 0
+    - 1
+    - 0
+    - 35
+    - 67
+    - 40
+    - 40
+    - 100
+    - 36
+    - 8
+    - 103
+    - 35
+    - 67
+    - 40
+    - 34
+    - 103
+    - 35
+    - 67
